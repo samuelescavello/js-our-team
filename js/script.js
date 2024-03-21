@@ -42,15 +42,19 @@ let arrStudenti = [
     }
 ]
 
-let ulEl = document.querySelector('ul')
+let ulEl = document.querySelector('.ss-card')
 
 for (let i = 0 ; i < arrStudenti.length ; i++ ){
-    const liEl = document.createElement('li');
-    liEl.innerHTML = 
-     `
-     nome: ${arrStudenti[i].nome} cognome: ${arrStudenti[i].cognome}
-     ruolo: ${arrStudenti[i].ruolo} <img src="img/${arrStudenti[i].foto}">
-    ;
-    `
+    const liEl = document.createElement('div');
+    liEl.classList.add('card', 'mt-4', 'mb-2', 'ms-3')
+    liEl.innerHTML =`
+    <img src="img/${arrStudenti[i].foto}">
+    <div class="card-body">
+    <p class="text-center">
+    nome: ${arrStudenti[i].nome} cognome: ${arrStudenti[i].cognome} <br>
+    ruolo: ${arrStudenti[i].ruolo}
+    </p>
+    </div>
+    `  
     ulEl.appendChild(liEl)
 }

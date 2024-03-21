@@ -1,0 +1,11 @@
+p{
+    color: gray;
+}
+body{
+    background-color: cornsilk;
+}
+
+.ss-card{
+    display: flex;
+    flex-wrap: wrap;
+}
