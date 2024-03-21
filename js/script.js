@@ -3,7 +3,7 @@ let arrStudenti = [
         nome : 'Wayne',
         cognome : 'Barnett',
         ruolo : 'Founder & CEO', 
-        foto: ' wayne-barnett-founder-ceo.jpg',
+        foto: 'wayne-barnett-founder-ceo.jpg',
     },
 
     {
@@ -17,7 +17,7 @@ let arrStudenti = [
         nome : 'Walter',
         cognome : 'Gordon',
         ruolo : 'Office Manager', 
-        foto: ' walter-gordon-office-manager.jpg',
+        foto: 'walter-gordon-office-manager.jpg',
     },
 
     {
@@ -31,7 +31,7 @@ let arrStudenti = [
         nome : 'Scott',
         cognome : 'Estrada',
         ruolo : 'Developer', 
-        foto: ' scott-estrada-developer.jpg',
+        foto: 'scott-estrada-developer.jpg',
     },
 
     {
@@ -49,7 +49,7 @@ for (let i = 0 ; i < arrStudenti.length ; i++ ){
     liEl.innerHTML = 
      `
      nome: ${arrStudenti[i].nome} cognome: ${arrStudenti[i].cognome}
-     ruolo: ${arrStudenti[i].ruolo} foto: ${arrStudenti[i].foto}
+     ruolo: ${arrStudenti[i].ruolo} <img src="img/${arrStudenti[i].foto}">
     ;
     `
     ulEl.appendChild(liEl)
